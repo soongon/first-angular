@@ -7,6 +7,7 @@ import { ProductFooterComponent } from './product-footer/product-footer.componen
 import { ProductContentComponent } from './product-content/product-content.component';
 import { ContentListComponent } from './product-content/content-list/content-list.component';
 import { ContentTitleComponent } from './product-content/content-title/content-title.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContentTitleComponent } from './product-content/content-title/content-t
     ContentTitleComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

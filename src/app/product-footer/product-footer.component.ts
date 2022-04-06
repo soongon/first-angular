@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ProductFooterComponent implements OnInit {
 
-  @Input() yearFromFather: number = 0;
+  @Input() year: number = 0;
   constructor() { }
 
   ngOnInit(): void {

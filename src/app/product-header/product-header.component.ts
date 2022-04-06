@@ -5,15 +5,11 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './product-header.component.html',
   styleUrls: ['./product-header.component.css']
 })
-export class ProductHeaderComponent implements OnInit {
+export class ProductHeaderComponent {
 
   @Input() titleId: string = '';
   @Input() titleColor: string = '';
   @Input() title: string = '';
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  
 }

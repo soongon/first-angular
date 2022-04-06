@@ -13,4 +13,8 @@ export class ContentTitleComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  buttonClicked() {
+    console.log('button clicked..');
+  }
+
 }
