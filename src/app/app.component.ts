@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'first-angular';
+  titleId = 'my-id';
+  titleColor = 'yellow';
+  title = '처음 만드는 Angular';
+  year = 2022;
 }
