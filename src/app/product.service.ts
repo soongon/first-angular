@@ -16,4 +16,8 @@ export class ProductService {
     };
   }
 
+  getProductsFromServer(): string[] {
+    return ['아이폰', '갤럭시', '키보드', '마우스'];
+  }
+
 }
