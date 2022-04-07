@@ -1,3 +1,7 @@
 <ul>
-  <li *ngFor="let product of products">{{ product }}</li>
+  <li *ngFor="let product of products">
+    <h3>{{ product.id }}</h3>
+    <p>{{ product.title }}</p>
+    <p>{{ product.body }}</p>
+  </li>
 </ul>

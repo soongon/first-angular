@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Product } from '../models/product.model';
 import { ProductService } from '../product.service';
 
 @Component({
@@ -8,14 +9,14 @@ import { ProductService } from '../product.service';
 })
 export class ProductContentComponent implements OnInit {
   
-  products: string[] = [];
+  products: Product[] = [];
   canClick = false;
   textData: string = '안녕';
 
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
-    const products: string[] = this.productService.getProductsFromServer();
+    const products: Product[] = this.productService.getProductsFromServer();
     this.products = products;
   }
 

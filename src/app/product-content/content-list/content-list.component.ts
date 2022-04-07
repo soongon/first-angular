@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Product } from 'src/app/models/product.model';
 
 @Component({
   selector: 'app-content-list',
@@ -7,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ContentListComponent implements OnInit {
   
-  @Input() products: string[] = [];
+  @Input() products: Product[] = [];
   constructor() { }
 
   ngOnInit(): void {
